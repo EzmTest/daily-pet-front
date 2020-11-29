@@ -1,0 +1,21 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Cadastro de Ong</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <form [formGroup]="form" fxLayout="column">
+            <mat-form-field>
+                <input matInput placeholder="Denominação" formControlName="denominacao" type="text">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Cnpj" formControlName="cnpj" type="text">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Descricao" formControlName="text" type="text">
+            </mat-form-field>
+        </form>
+    </mat-card-content>
+    <mat-card-actions align="end">
+        <button mat-raised-button (click)="salvar()">Salvar</button>
+    </mat-card-actions>
+</mat-card>
